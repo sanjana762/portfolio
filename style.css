@@ -323,7 +323,7 @@ body {
 .image-frame img {
     width: 470px;          /* adjust size if needed */
     max-width: 100%;
-    height: auto;
+    height: 500px;
     display: block;
     transition: var(--transition-slow);
     filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.35));
