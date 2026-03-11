@@ -308,34 +308,34 @@ body {
 
 .hero-image {
     animation: fadeInUp 0.8s ease 0.4s both;
+    display: flex;
+    justify-content: center;
 }
 
 .image-frame {
     position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    overflow: visible;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
 }
 
 .image-frame img {
-    width: 100%;
+    width: 420px;          /* adjust size if needed */
+    max-width: 100%;
     height: auto;
     display: block;
     transition: var(--transition-slow);
+    filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.35));
 }
 
 .image-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.3) 0%, rgba(236, 72, 153, 0.3) 100%);
-    opacity: 0;
-    transition: var(--transition-medium);
+    display: none;
 }
 
 .image-frame:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
-
 .image-frame:hover .image-overlay {
     opacity: 1;
 }
