@@ -321,7 +321,7 @@ body {
 }
 
 .image-frame img {
-    width: 420px;          /* adjust size if needed */
+    width: 470px;          /* adjust size if needed */
     max-width: 100%;
     height: auto;
     display: block;
